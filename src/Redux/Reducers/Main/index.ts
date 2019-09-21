@@ -15,7 +15,8 @@ export interface IMainAction {
 export const initialMainState: IAllState['Main'] = { main: 'main' };
 
 export const MainReducer = (state = initialMainState, action: IMainAction) => {
-    const { type, payload, _reponse = {} } = action;
+    //const { type, payload, _reponse = {} } = action;
+    const { type } = action;
     switch (type) {
         case 'MainAction':
         case 'Action':
